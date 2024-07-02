@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import useAuth from "../hooks/useAuth";
 import { addTodo } from "../api/todo";
+import "./style.css";
 
 const AddTodo = () => {
   const [title, setTitle] = React.useState("");
@@ -46,7 +47,7 @@ const AddTodo = () => {
   };
 
   return (
-    <Box w="40%" margin={"0 auto"} display="block" mt={5}>
+    <Box className="box" w="40%" margin={"0 auto"} display="block" mt={5}>
       <Stack direction="column">
         <Input
           placeholder="Title"
@@ -77,7 +78,7 @@ const AddTodo = () => {
           disabled={title.length < 1 || description.length < 1 || isLoading}
           variant="solid"
           color={"white"}
-          bg={"teal.400"}
+          bg={"#008170"}
         >
           Add
         </Button>

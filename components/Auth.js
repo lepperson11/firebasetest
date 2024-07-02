@@ -32,8 +32,8 @@ const Auth = () => {
       </Button>{" "}
       {isLoggedIn && (
         <>
-          <Text color="green.500">{user.email}</Text>
-          <Link color="red.500" onClick={() => auth.signOut()}>
+          <Text color="#008170">{user.email}</Text>
+          <Link color="#BE3144" onClick={() => auth.signOut()}>
             Logout
           </Link>
         </>
